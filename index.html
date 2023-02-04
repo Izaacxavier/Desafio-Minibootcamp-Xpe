@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calc">
+        <div class="campo-calc">
+            <div class="header-content">
+                <h1>Super calculadora</h1>
+            
+            <div class="input-content">   
+                <label for="numero-a">Primeiro número (A):</label>
+                <input class="number1" id="n1" type="text" name="numero-a" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                <label for="number2">Segundo número (B):</label>
+                <input class="numberB" id="n2" type="text" name="numero-b" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                <button class="button" type="submit">Calcular</button>
+            </div>
+        </div>
+
+            <ul class="result">
+                <li class="result-1">
+                    <p>Soma</p>
+                    <span></span>
+                </li>
+                <li class="result-2">
+                    <p>Subtraçao A-B</p>
+                    <span></span>
+                </li>
+                <li class="result-3">
+                    <p>Subtraçao B - A</p>
+                    <span></span>
+                </li>
+                <li class="result-4">
+                    <p>Multiplicaçao</p>
+                    <span></span>
+                </li>
+                <li class="result-5">
+                    <p>liisáo A/B</p>
+                    <span></span>
+                </li>
+                <li class="result-6">
+                    <p>Divisao B/A</p>
+                    <span></span>
+                </li>
+                <li class="result-7">
+                    <p>Potencia de A na base B</p>
+                    <span></span>
+                </li>
+                <li class="result-8">
+                    <p>Potencia de B na base A</p>
+                    <span></span>
+                </li>
+                <li class="result-9">
+                    <p>Raiz quadrada de A</p>
+                    <span></span>
+
+                </li>
+                <li class="result-10">
+                    <p>Raiz quadrada de B</p>
+                    <span></span>
+                </li>
+                <li class="result-11">
+                    <p>Fatorial A</p>
+                    <span></span>
+                </li>
+                <li class="result-12">
+                    <p>Fatorial B</p>
+                    <span></span>
+                </li>
+                <li class="result-13">
+                    <p>Porcentagem A em relaçao a B</p>
+                    <span></span>
+                </li>
+                <li class="result-14">
+                    <p>Porcentagem A em relaçao a B</p>
+                    <span></span>
+                </li>
+                <li class="result-15">
+                    <p>Média</p>
+                    <span></span>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <script src="/script.js" ></script>
+</body>
+
+</html>
